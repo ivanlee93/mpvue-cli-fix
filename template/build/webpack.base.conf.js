@@ -10,11 +10,7 @@ function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-const entry = MpvueEntry.getEntry({
-  pages: './src/pages.js', //可以不填，缺省就是这个
-  main: './src/main.js', //可以不填，缺省就是这个
-  template: './src/template.js'
-})
+const entry = MpvueEntry.getEntry('./src/app.json')
 
 module.exports = {
   entry,
@@ -50,6 +46,11 @@ module.exports = {
         test: /\.vue$/,
         loader: 'mpvue-loader',
         options: vueLoaderConfig
+      },
+      {
+        test: /\.vue$/,
+        loader: 'mpvue-config-loader',
+        exclude: [resolve('src/components')]
       },
       {
         test: /\.js$/,

@@ -50,9 +50,9 @@
     "flyio": "^0.6.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "minapp-api-promise": "^1.0.2",
-    "mpvue-entry": "^1.5.0",
-    "mpvue-loader": "git+https://github.com/HelloZJW/mpvue-loader.git",
-    "mpvue-page-factory": "^1.0.1",
+    "mpvue-config-loader": "^0.1.0",
+    "mpvue-entry": "next",
+    "mpvue-loader": "^1.1.2",
     "mpvue-router-patch": "^0.2.1",
     "mpvue-template-compiler": "^1.0.0",
     "mpvue-webpack-target": "^1.0.0",
@@ -74,7 +74,7 @@
     "webpack-bundle-analyzer": "^2.13.0",
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
-    "webpack-mpvue-asset-plugin": "^0.1.0"
+    "webpack-mpvue-asset-plugin": "0.1.1"
   },
   "engines": {
     "node": ">= 4.0.0",
