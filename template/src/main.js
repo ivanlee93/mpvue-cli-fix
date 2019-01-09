@@ -6,9 +6,9 @@ import WXP from 'minapp-api-promise'
 import MpvueRouterPatch from 'mpvue-router-patch'
 import Hack from '@/utils/hack'
 
+Vue.use(Hack)
 Vue.use(IboxPlugin)
 Vue.use(MpvueRouterPatch)
-Vue.use(Hack)
 Vue.prototype.$wx = WXP
 Vue.config.productionTip = false
 

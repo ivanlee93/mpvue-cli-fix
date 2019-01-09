@@ -1,15 +1,18 @@
 <template>
   <div>
-    <input type="text"
-           class="form-control"
-           v-model="text"
-           placeholder="v-model" />
+    <input type="text" class="form-control" v-model="text" placeholder="v-model" />
   </div>
 </template>
 
 <script>
 export default {
-  props: ['text']
+  data () {
+    return {
+      userInfo: {}
+    }
+  },
+  props: ['text'],
+
 }
 </script>
 

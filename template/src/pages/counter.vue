@@ -1,17 +1,13 @@
 <template>
   <div class="counter-warp">
     <p>Vuex counter： </p>
-    <input type="text"
-           class="form-control"
-           v-model="count"
-           placeholder="v-model" />
+    <input type="text" class="form-control" v-model="count" placeholder="v-model" />
     <p>
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
     </p>
 
-    <a @click="goHome"
-       class="home">去往首页</a>
+    <a @click="goHome" class="home">去往首页</a>
   </div>
 </template>
 
@@ -19,6 +15,11 @@
 import { mapState, mapActions } from 'vuex'
 
 export default {
+  data () {
+    return {
+      userInfo: {}
+    }
+  },
   computed: {
     ...mapState('counter', [
       'count'
